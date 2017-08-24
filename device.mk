@@ -85,6 +85,11 @@ AB_OTA_POSTINSTALL_CONFIG += \
 PRODUCT_PACKAGES += \
     otapreopt_script
 
+# Android_net
+PRODUCT_PACKAGES += \
+    libandroid_net \
+    libandroid_net_32
+
 # Boot animation
 TARGET_SCREEN_HEIGHT := 2560
 TARGET_SCREEN_WIDTH := 1312
