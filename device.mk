@@ -428,6 +428,7 @@ PRODUCT_PACKAGES += \
     vndk_package
 
 PRODUCT_COMPATIBLE_PROPERTY_OVERRIDE := true
+PRODUCT_PROPERTY_OVERRIDES += rild.libpath=/system/vendor/lib64/libril-qc-qmi-1.so
 
 # Wifi
 PRODUCT_COPY_FILES += \
