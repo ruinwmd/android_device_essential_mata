@@ -422,6 +422,8 @@ PRODUCT_PACKAGES += \
     libstdc++.vendor \
     vndk_package
 
+PRODUCT_COMPATIBLE_PROPERTY_OVERRIDE := true
+
 # Wifi
 PRODUCT_COPY_FILES += \
     device/essential/mata/wifi/p2p_supplicant_overlay.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/p2p_supplicant_overlay.conf \
