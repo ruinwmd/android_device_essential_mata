@@ -2,7 +2,7 @@
   {
     "repository": "LineageOS/android_device_qcom_common",
     "target_path": "device/qcom/common",
-    "branch": "lineage-15.1"
+    "branch": "lineage-16.0"
   },
   {
     "repository": "dvandenburgh/proprietary_vendor_essential",
@@ -15,14 +15,14 @@
     "branch": "Artemis"
   },
   {,
-    "repository": "celtare21/android_device_essential_mata-1"
+    "repository": "ruinwmd/android_device_essential_mata"
     "target_path": "device/essential/mata"
-    "branch": "aicp"
+    "branch": "lineage-16.0"
   },
   {
     "repository": "LineageOS/android_packages_resources_devicesettings",
     "target_path": "packages/resources/devicesettings",
-    "branch": "lineage-15.1"
+    "branch": "lineage-16.0"
   },
   {
     "repository":  "opengapps/aosp_build",
