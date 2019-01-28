@@ -183,7 +183,22 @@ PRODUCT_PACKAGES += \
     android.hardware.gatekeeper@1.0-service
 
 # Gapps
-$(call inherit-product-if-exists, vendor/pixelgapps/pixel-gapps.mk)
+GAPPS_VARIANT := nano
+GAPPS_FORCE_PACKAGE_OVERRIDES := true
+GAPPS_FORCE_WEBVIEW_OVERRIDES := true
+GAPPS_FORCE_MMS_OVERRIDES := true
+GAPPS_FORCE_DIALER_OVERRIDES := true
+GAPPS_FORCE_BROWSER_OVERRIDES := true
+#GAPP APPS
+GAPPS_PRODUCT_PACKAGES += Chrome
+GAPPS_PRODUCT_PACKAGES += Photos
+GAPPS_PRODUCT_PACKAGES += CalendarGooglePrebuilt
+GAPPS_PRODUCT_PACKAGES += GoogleContacts
+GAPPS_PRODUCT_PACKAGES += Music2
+GAPPS_PRODUCT_PACKAGES += PrebuiltGmail
+GAPPS_PRODUCT_PACKAGES += Youtube
+
+$(call inherit-product, vendor/opengapps/build/opengapps-packages.mk)
 
 # HDR
 PRODUCT_COPY_FILES += \
