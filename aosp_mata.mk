@@ -1,10 +1,11 @@
 # Inherit some common Lineage stuff.
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, vendor/aosp/config/common.mk)
-
+$(call inherit-product, vendor/aosp/config/telephony.mk)
+$(call inherit-product, vendor/aosp/config/aex_props.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
-
+$(call inherit-product, vendor/aosp/config/BoardConfigAosp.mk)
 # Vendor blobs
 $(call inherit-product-if-exists, vendor/essential/mata/mata-vendor.mk)
 
